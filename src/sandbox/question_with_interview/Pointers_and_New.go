@@ -11,9 +11,9 @@ func createPointer(x int) *int {
 func main() {
 
 	p := new(int)
-	fmt.Println("Value:", *p) // Value: 0 - значение по умолчанию
-	*p = 8                    // изменяем значение
-	fmt.Println("Value:", *p) // Value: 8
+	fmt.Println("val:", *p) // val: 0 - значение по умолчанию
+	*p = 8                  // изменяем значение
+	fmt.Println("val:", *p) // val: 8
 
 	p1 := createPointer(7)
 	fmt.Println("p1:", *p1) // p1: 7

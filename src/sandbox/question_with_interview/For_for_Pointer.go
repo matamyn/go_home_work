@@ -19,7 +19,8 @@ func test(tmp []*int) []*int {
 
 func main() {
 	var numbers []*int
-	for _, value := range []int{1, 2, 3, 4} {
+	var arr = []int{1, 2, 3, 4}
+	for _, value := range arr {
 		fmt.Printf("%d ", &value)
 		var tmp int = value
 		numbers = append(numbers, &tmp)
